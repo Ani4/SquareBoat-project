@@ -1,0 +1,24 @@
+{
+  "name": "squareboat__project",
+  "version": "1.0.0",
+  "description": "this project is given during the colg placement ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ani4/SqaureBoat__Project.git"
+  },
+  "keywords": [
+    "CSS",
+    "SASS",
+    "Front-End"
+  ],
+  "author": "Aniket||Sharma.ani.4298@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ani4/SqaureBoat__Project/issues"
+  },
+  "homepage": "https://github.com/Ani4/SqaureBoat__Project#readme"
+}
