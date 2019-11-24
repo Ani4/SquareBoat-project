@@ -1,0 +1,14 @@
+.main-container {
+    background-color: $bg-white;
+    height: 100%;
+    border-radius: 4rem;
+    border-width: 0;
+    border-style: none;
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 78% 22%;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+}

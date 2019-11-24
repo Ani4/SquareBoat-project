@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+    font-weight: 400;
+}
+
+html {
+    //this is 1rem = 10px(by defualt );
+    font-size: 62.5%;
+}

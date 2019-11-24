@@ -1,0 +1,20 @@
+//@fonts
+@import url("https://fonts.googleapis.com/css?family=Lemonada:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap");
+
+//@variabls
+@import "./abstract/variables";
+@import "./abstract/ids";
+
+//@base
+@import "./base/base";
+
+//@components
+@import "./components/profileClipboard";
+@import "components/mainContent";
+
+
+//@layout
+@import "./layout/outerContainer";
+@import "./layout/mainContainer";
+@import "./layout/sideContainer";

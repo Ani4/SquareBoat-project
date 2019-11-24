@@ -1,0 +1,64 @@
+.main-content {
+    background-color: $bg-white;
+    border-radius: 4rem 0 0 4rem;
+    border-width: 0;
+    border-style: none none solid none;
+
+    li,
+    a,
+    button {
+        font-weight: 400;
+        font-size: 16px;
+        color: $nav-item-color;
+        text-decoration: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 60px 10px;
+
+        .nav__links {
+            list-style: none;
+            padding-right: auto;
+
+            li {
+                display: inline-block;
+
+                a {
+                    transition: all 0.3 ease 0s;
+
+                    &:hover {
+                        color: lighten($orange, 10%);
+                    }
+
+                    &:active {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+
+        button {
+            padding: 15px 25px;
+            background-color: $btn-primary-color;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3 ease 0s;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+
+            button>img,
+            button>span {
+                vertical-align: middle;
+            }
+
+            &:hover {
+                background-color: lighten($btn-primary-color, 5%);
+            }
+        }
+    }
+}

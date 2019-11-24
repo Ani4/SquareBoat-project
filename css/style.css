@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Lemonada:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap");
+#brand {
+  font-weight: 600;
+  color: #ff5c4a;
+  cursor: pointer;
+  font-family: "Lemonada", cursive;
+  font-size: 16px; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+  font-weight: 400; }
+
+html {
+  font-size: 62.5%; }
+
+.main-content {
+  background-color: white;
+  border-radius: 4rem 0 0 4rem;
+  border-width: 0;
+  border-style: none none solid none; }
+  .main-content li,
+  .main-content a,
+  .main-content button {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4c4967;
+    text-decoration: none; }
+  .main-content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px 10px; }
+    .main-content header .nav__links {
+      list-style: none;
+      padding-right: auto; }
+      .main-content header .nav__links li {
+        display: inline-block; }
+        .main-content header .nav__links li a {
+          transition: all 0.3 ease 0s; }
+          .main-content header .nav__links li a:hover {
+            color: #ff8a7d; }
+          .main-content header .nav__links li a:active {
+            color: #ff5c4a; }
+    .main-content header button {
+      padding: 15px 25px;
+      background-color: #5358e2;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3 ease 0s;
+      text-align: center;
+      font-size: 18px;
+      color: #fff; }
+      .main-content header button button > img,
+      .main-content header button button > span {
+        vertical-align: middle; }
+      .main-content header button:hover {
+        background-color: #696de6; }
+
+body {
+  font-family: " Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box; }
+
+.outer-container {
+  padding: 5rem 10rem;
+  background-color: #eceef9;
+  height: 100vh; }
+
+.main-container {
+  background-color: white;
+  height: 100%;
+  border-radius: 4rem;
+  border-width: 0;
+  border-style: none;
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 78% 22%;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  -o-border-radius: 4rem; }
+
+.side-content {
+  background-color: #f4f8fb;
+  border-radius: 0 2rem 2rem 0;
+  border-width: 0;
+  border-style: none none solid none;
+  -webkit-border-radius: 0 4rem 2rem 0;
+  -moz-border-radius: 0 2rem 2rem 0;
+  -ms-border-radius: 0 2rem 2rem 0;
+  -o-border-radius: 0 2rem 2rem 0; }
