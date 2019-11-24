@@ -24,11 +24,6 @@
   "devDependencies": {
     "live-server": "^1.2.1",
     "node-sass": "^4.13.0"
-  },
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "font-awesome": "^4.7.0",
-    "jquery": "^1.9.1",
-    "popper.js": "^1.16.0"
   }
+ 
 }
