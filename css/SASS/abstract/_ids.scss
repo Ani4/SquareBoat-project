@@ -5,3 +5,18 @@
     font-family: "Lemonada", cursive;
     font-size: 16px;
 }
+
+#view-profile {
+    color: $btn-primary-color;
+    float: right;
+    margin: 2rem 3rem 4rem 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &:hover {
+        cursor: pointer;
+        color: darken($btn-primary-color, 10%);
+    }
+
+}

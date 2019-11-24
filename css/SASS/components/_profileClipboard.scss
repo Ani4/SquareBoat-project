@@ -1,0 +1,148 @@
+.profile-card {
+    margin: $top-space 5px 5px;
+
+
+    .top-bar {
+        font-size: 2rem;
+        padding: 10px;
+        margin: 10px;
+        position: relative;
+        color: $nav-item-color;
+
+
+        .fa-bell {
+            float: left;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 1rem;
+                left: 2rem;
+                background-color: $btn-primary-color;
+                padding: 4px;
+                font-size: .1px;
+                border-radius: 100px;
+                border: 1px solid $bg-outer;
+
+            }
+        }
+
+        .fa-cog {
+            float: right;
+        }
+    }
+
+
+    .main-profile-card {
+        margin: 1rem;
+        align-items: center;
+        height: 18rem;
+
+
+
+        .profile_intro {
+            border-radius: 100%;
+            height: 9rem;
+            display: block;
+            margin: 5rem auto 5px auto;
+            line-height: 2.5rem;
+
+            width: 50%;
+
+            img {
+                border-radius: 100%;
+                height: 11rem;
+                display: block;
+                margin: 5px auto 15px auto;
+            }
+
+            .user-name {
+                font-size: 2rem;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            .user-desg {
+                font-size: 1.4rem;
+                font-weight: 300;
+                text-align: center;
+            }
+
+        }
+    }
+
+    .profile-detail {
+        margin: .5em 0 0 2em;
+        font-size: 1.2rem;
+
+
+        &>span {
+            margin-left: 2rem;
+            line-height: 4rem;
+            font-weight: 200;
+
+            .fa {
+                font-size: 1.6rem;
+                margin-right: 3rem;
+            }
+
+            &#followers-bar {
+                color: $btn-primary-color;
+            }
+
+            &#following-bar {
+                color: $nav-item-color;
+            }
+
+            &#article-bar {
+                color: $orange;
+            }
+
+            &>span>span {
+                font-weight: 600;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .domain-section {
+        margin: 3rem 0 3rem 4rem;
+
+        .list-group {
+            list-style: none;
+
+            li {
+                margin: 2rem 0 2rem 0;
+
+                &>div {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+
+
+        }
+
+        .domain-content {
+            h3 {
+                font-weight: 500;
+                color: darken(grey, 30%);
+
+                &+h3 {
+                    font-weight: 400;
+                    color: grey;
+                }
+            }
+
+            img {
+                height: 4rem;
+                float: left;
+                border-radius: .5rem;
+                margin-right: 2rem;
+            }
+        }
+    }
+
+
+
+}
