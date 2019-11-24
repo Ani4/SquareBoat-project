@@ -4,7 +4,7 @@
   "description": "this project is given during the colg placement ",
   "main": "index.html",
   "scripts": {
-    "start": "node-sass css/main.scss css/style.css -w"
+    "start": "node-sass css/SASS/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^1.9.1",
     "popper.js": "^1.16.0"
   }
