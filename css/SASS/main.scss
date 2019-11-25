@@ -5,15 +5,19 @@
 //@variabls
 @import "./abstract/variables";
 @import "./abstract/ids";
+@import "./abstract/function";
 
 //@base
 @import "./base/base";
 
 //@components
 @import "./components/profileClipboard";
-@import "components/mainContent";
+@import "./components/mainContent";
+@import "./components/verticalNav";
+@import "./components/articleContent";
 
 //@layout
 @import "./layout/outerContainer";
 @import "./layout/mainContainer";
 @import "./layout/sideContainer";
+@import "./layout/articleContainer";

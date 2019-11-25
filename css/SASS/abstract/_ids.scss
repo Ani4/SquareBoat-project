@@ -6,10 +6,12 @@
     font-size: 16px;
 }
 
-#view-profile {
+.more {
     color: $btn-primary-color;
     float: right;
-    margin: 2rem 3rem 4rem 0;
+    position: absolute;
+    bottom: 3%;
+    right: 10%;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;

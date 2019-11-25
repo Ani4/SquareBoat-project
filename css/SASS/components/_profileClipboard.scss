@@ -1,11 +1,11 @@
 .profile-card {
-    margin: $top-space 5px 5px;
+    margin: 40px 5px 5px;
 
 
     .top-bar {
         font-size: 2rem;
         padding: 10px;
-        margin: 10px;
+        margin: 40px;
         position: relative;
         color: $nav-item-color;
 
@@ -33,8 +33,8 @@
     }
 
 
-    .main-profile-card {
-        margin: 1rem;
+    .card {
+        margin: 8rem 1rem 1rem;
         align-items: center;
         height: 18rem;
 
@@ -72,7 +72,7 @@
     }
 
     .profile-detail {
-        margin: .5em 0 0 2em;
+        margin: 3em 0 0 2em;
         font-size: 1.2rem;
 
 
@@ -106,7 +106,7 @@
     }
 
     .domain-section {
-        margin: 3rem 0 3rem 4rem;
+        margin: 5rem 0 5rem 4rem;
 
         .list-group {
             list-style: none;
@@ -136,6 +136,7 @@
 
             img {
                 height: 4rem;
+                width: 4rem;
                 float: left;
                 border-radius: .5rem;
                 margin-right: 2rem;
