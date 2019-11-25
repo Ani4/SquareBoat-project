@@ -22,3 +22,17 @@
     }
 
 }
+
+li#selected-link {
+    background-color: white;
+    border-radius: 200px 0 0 200px;
+    z-index: 1;
+    position: relative;
+
+
+    &>a {
+        color: $nav-item-color;
+    }
+
+
+}

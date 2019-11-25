@@ -3,7 +3,38 @@
     background-color: $orange;
     border-radius: 0 4rem 0 4rem;
     height: 70em;
-    width: 10rem;
+    width: 15%;
+
+    .fill-nav {
+        height: 66rem;
+        margin: 2rem 0 2rem 2rem;
+    }
+
+    .nav__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 66rem;
+        padding: 10rem 0;
+        width: 100%;
+    }
+
+    li.nav-item,
+    a.nav-link {
+
+        font-size: 4rem;
+        align-items: center;
+        color: $bg-white;
+
+    }
+
+    a.nav-link {
+        padding: 0 0 0 3rem;
+    }
+
+
+
 
 
 }
