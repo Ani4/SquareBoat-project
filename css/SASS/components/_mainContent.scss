@@ -38,6 +38,8 @@
 
           &:hover {
             color: lighten($orange, 10%);
+            border-bottom: 2px solid lighten(blue, 40%);
+
 
           }
 
@@ -45,9 +47,13 @@
             color: $orange;
           }
 
-          &#right-now {
-            border-bottom: 2px solid blue;
+          &.disabled-nav {
+            pointer-events: none;
           }
+
+          // &#right-now {
+          //   border-bottom: 2px solid blue;
+          // }
 
           // &:link,
           // &:visited {

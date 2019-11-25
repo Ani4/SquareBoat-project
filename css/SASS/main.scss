@@ -10,6 +10,7 @@
 //@base
 @import "./base/base";
 
+
 //@components
 @import "./components/profileClipboard";
 @import "./components/mainContent";
@@ -21,3 +22,7 @@
 @import "./layout/mainContainer";
 @import "./layout/sideContainer";
 @import "./layout/articleContainer";
+
+//@animations
+@import "./animations/shaking";
+@import "./animations/rotation";

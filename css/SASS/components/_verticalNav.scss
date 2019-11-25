@@ -2,8 +2,12 @@
     float: left;
     background-color: $orange;
     border-radius: 0 4rem 0 4rem;
-    height: 70em;
+    height: inherit;
     width: 15%;
+    -webkit-border-radius: 0 4rem 0 4rem;
+    -moz-border-radius: 0 4rem 0 4rem;
+    -ms-border-radius: 0 4rem 0 4rem;
+    -o-border-radius: 0 4rem 0 4rem;
 
     .fill-nav {
         height: 66rem;
@@ -20,17 +24,45 @@
         width: 100%;
     }
 
-    li.nav-item,
+
     a.nav-link {
 
         font-size: 4rem;
         align-items: center;
         color: $bg-white;
 
+        &:hover {
+            background-color: lighten($orange, 20%);
+            color: lighten(black, 60%);
+            border-radius: 200px 0 0 200px;
+            z-index: 1;
+            position: relative;
+            -webkit-border-radius: 200px 0 0 200px;
+            -moz-border-radius: 200px 0 0 200px;
+            -ms-border-radius: 200px 0 0 200px;
+            -o-border-radius: 200px 0 0 200px;
+        }
+
+
+
+        &.disabled {
+            pointer-events: none;
+        }
+
+
+
+
     }
 
+
+
+
+
+
+
+
     a.nav-link {
-        padding: 0 0 0 3rem;
+        padding: 0 5rem 0 3rem;
     }
 
 

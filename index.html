@@ -9,7 +9,9 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- <script src="https://kit.fontawesome.com/fc46024aec.js" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
 
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -31,8 +33,8 @@
                     <a href="#" id="brand">writer</a>
                     <nav>
                         <ul class="nav__links">
-                            <li><a href="#" class="right_now">Overview</a></li>
-                            <li><a href="#">Article</a></li>
+                            <li><a href="#" class="right_now disabled-nav">Overview</a></li>
+                            <li><a href="#" class="">Article</a></li>
                             <li><a href="#">Followers</a></li>
                             <li><a href="#" id="last-nav-item">History</a></li>
                         </ul>
@@ -51,19 +53,19 @@
                     <div class="vertical-nav">
                         <div class="fill-nav">
                             <ul class="nav__list">
-                                <li class="nav-iteam"><a atl="HOME" href="#" class="nav-link"><i
+                                <li class="nav-iteam"><a alt="HOME" href="#" class="nav-link"><i
                                             class="fa fa-home"></i></a></li>
 
-                                <li class="nav-iteam" id="selected-link"><a atl="HOME" href="#" class="nav-link"><i
-                                            class="fa fa-chain-broken" aria-hidden="true"></i></a>
+                                <li class="nav-iteam" class="disabled" id="selected-link"><a alt="LIST" href="#"
+                                        class="nav-link"><i class="fa fa-chain-broken" aria-hidden="true"></i></a>
                                 </li>
 
 
-                                <li class="nav-iteam"><a atl="YOUR WORK" href="#" class="nav-link ">
-                                        <i class="fa fa-fire" aria-hidden="true"></i></a>
+                                <li class="nav-iteam"><a alt="YOUR WORK" href="#" class="nav-link "><i
+                                            class="fa fa-star" aria-hidden="true"></i></a>
                                 </li>
-                                <li class="nav-iteam"><a atl="PROFILE" href="#" class="nav-link">
-                                        <i class="fa fa-user" aria-hidden="true"></i></a>
+                                <li class="nav-iteam"><a alt="PROFILE" href="#" class="nav-link"><i
+                                            class="fa fa-address-book" aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -79,39 +81,168 @@
                             <div class="card">
                                 <div class="card-icon"><i class="fa fa-user" aria-hidden="true"></i>
                                 </div>
-                                <h3 class="card-number">10.2K</h3>
+                                <h3 class="card-number">10.2 K</h3>
                                 <h5 class="card-details">Followers</h5>
 
                             </div>
                             <div class="card">
                                 <div class="card-icon"><i class="fa fa-user" aria-hidden="true"></i>
                                 </div>
-                                <h3 class="card-number">10.2K</h3>
+                                <h3 class="card-number">10.2 K</h3>
                                 <h5 class="card-details">Followers</h5>
 
                             </div>
                             <div class="card">
                                 <div class="card-icon"><i class="fa fa-user" aria-hidden="true"></i>
                                 </div>
-                                <h3 class="card-number">10.2K</h3>
+                                <h3 class="card-number">10.2 K</h3>
                                 <h5 class="card-details">Followers</h5>
 
                             </div>
                         </div>
-                        <div class="article-statistics">
+                        <!--
+                            TODO:  ARTICLE-STATISTICS
+                         -->
+                        <div class="article-stats">
                             <h1>Article Statistics</h1>
                             <ul>
-                                <li>sd</li>
-                                <li>ds</li>
-                                <li>sd</li>
+                                <!--
+                                     1 
+                                    -->
+                                <li class="article-item">
+                                    <div class="article-stats-list">
+                                        <img src="https://thenypost.files.wordpress.com/2019/03/millennial-bored-at-work.jpg?quality=90&strip=all&w=618&h=410&crop=1"
+                                            alt=" Ten Ways I Approach My Work" class="article-stats-img" />
+                                        <div class="article-stats-details">
+                                            <p class="article-stats-details-heading">Ten Ways I Approach My Work</p>
+                                            <ul class="second-row ul-row">
+                                                <li class="font-gray">
+                                                    <span class="datePut "> </span>
+                                                </li>&nbsp
+                                                <li class="font-gray"> <i class="fa fa-circle " aria-hidden="true"></i>
+                                                    &nbsp 5
+                                                    min read
+                                                </li>&nbsp
+                                                <li class="font-gray"> &nbsp<i class=" fa fa-circle"
+                                                        aria-hidden="true"></i>
+                                                    &nbsp 3k
+                                                    words</li>
+
+                                            </ul>
+                                            <ul class="third-row ul-row">
+                                                <li class="font-dark">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i> 3k views
+                                                </li>
+                                                <li class="font-dark"><i class="fa fa-share" aria-hidden="true"></i>
+                                                    124 comments</li>
+                                                <li class="font-dark"><i class="fa fa-heart" aria-hidden="true"></i>
+                                                    1,2 k likes</li>
+
+                                            </ul>
+                                            <div class="btn-group">
+                                                <button class="yellow-black btn ">popular</button>
+                                                <button class="orange-white btn">editor choise</button>
+                                            </div>
+
+                                            <span class="more"> FULL STATISTIC &nbsp <i
+                                                    class="fa fa-chevron-right"></i></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- 
+                                    2
+                                 -->
+                                <li class="article-item">
+                                    <div class="article-stats-list">
+                                        <img src="https://miro.medium.com/max/4000/1*tM5wXlNo90LmvxwoZhdaQQ.jpeg"
+                                            alt=" 8 Steps to an Effective Design Review" class="article-stats-img" />
+                                        <div class="article-stats-details">
+                                            <p class="article-stats-details-heading">8 Steps to an Effective Design
+                                                Review</p>
+                                            <ul class="second-row ul-row">
+                                                <li class="font-gray">
+                                                    <span class="datePut "> </span>
+                                                </li>&nbsp
+                                                <li class="font-gray"> <i class="fa fa-circle " aria-hidden="true"></i>
+                                                    &nbsp 5
+                                                    min read
+                                                </li>&nbsp
+                                                <li class="font-gray"> &nbsp<i class=" fa fa-circle"
+                                                        aria-hidden="true"></i>
+                                                    &nbsp 3k
+                                                    words</li>
+
+                                            </ul>
+                                            <ul class="third-row ul-row">
+                                                <li class="font-dark">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i> 3k views
+                                                </li>
+                                                <li class="font-dark"><i class="fa fa-share" aria-hidden="true"></i>
+                                                    124 comments</li>
+                                                <li class="font-dark"><i class="fa fa-heart" aria-hidden="true"></i>
+                                                    1,2 k likes</li>
+
+                                            </ul>
+                                            <div class="btn-group">
+                                                <button class="blue-white btn ">Top 10 in</button>
+                                                <button class="orange-white btn">editor choise</button>
+                                            </div>
+
+                                            <span class="more"> FULL STATISTIC &nbsp <i
+                                                    class="fa fa-chevron-right"></i></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- 
+                                    3
+                                 -->
+                                <li class="article-item">
+                                    <div class="article-stats-list">
+                                        <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/10/how-to-create-a-travel-content-strategy-that-drives-links-traffic-conversions-5dcfaadec9590-760x400.png"
+                                            alt=" A good streagy never done" class="article-stats-img" />
+                                        <div class="article-stats-details">
+                                            <p class="article-stats-details-heading">A good streagy never done</p>
+                                            <ul class="second-row ul-row">
+                                                <li class="font-gray">
+                                                    <span class="datePut "> </span>
+                                                </li>&nbsp
+                                                <li class="font-gray"> <i class="fa fa-circle " aria-hidden="true"></i>
+                                                    &nbsp 5
+                                                    min read
+                                                </li>&nbsp
+                                                <li class="font-gray"> &nbsp<i class=" fa fa-circle"
+                                                        aria-hidden="true"></i>
+                                                    &nbsp 3k
+                                                    words</li>
+
+                                            </ul>
+                                            <ul class="third-row ul-row">
+                                                <li class="font-dark">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i> 3k views
+                                                </li>
+                                                <li class="font-dark"><i class="fa fa-share" aria-hidden="true"></i>
+                                                    124 comments</li>
+                                                <li class="font-dark"><i class="fa fa-heart" aria-hidden="true"></i>
+                                                    1,2 k likes</li>
+
+                                            </ul>
+                                            <div class="btn-group">
+                                                <button class="lightskyblue-white btn ">popular</button>
+                                                <button class="lightorange-white btn">Most Liked</button>
+                                            </div>
+
+                                            <span class="more"> FULL STATISTIC &nbsp <i
+                                                    class="fa fa-chevron-right"></i></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
-
-
-
 
                 <!-- 
         SIDE CONTENT 
@@ -193,14 +324,15 @@
                 </div>
 
                 <div>
-                    <span class="more"> view Profile &nbsp<i class="fa fa-chevron-right"></i>
+                    <span class="more" onload="setDate()"> view Profile &nbsp<i class="fa fa-chevron-right"></i>&nbsp
+                        &nbsp &nbsp
                     </span>
                 </div>
 
             </div>
         </div>
     </div>
-
+    <script src="scripts/afterLoad.js"></script>
 
 </body>
 

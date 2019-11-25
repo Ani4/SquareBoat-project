@@ -14,7 +14,7 @@
 
     .card {
         position: relative;
-        height: 25rem;
+        height: 22rem;
         width: 25rem;
         border-radius: 2rem;
         box-shadow: -.1rem -0.3rem 3rem -0.3rem $shadow-color;
@@ -24,7 +24,7 @@
         -ms-border-radius: 2rem;
         -o-border-radius: 2rem;
         text-align: center;
-        padding: 4rem;
+        padding: 3rem;
 
         &-icon {
             height: 6rem;
@@ -79,17 +79,145 @@
     //ARTICLE STATISTICS
 
 
-    .article-statistics {
+    .article-stats {
         padding: 4rem 0 0 1.6rem;
         width: 100%;
 
         ul {
             list-style: none;
 
-            li {
+            .article-item {
                 margin: 2rem;
             }
+
         }
+
+        &-list {
+            display: flex;
+            background-color: $bg-side-bar;
+            border-radius: 3rem 1rem 1rem 1rem;
+            padding: 1.5rem;
+            -webkit-border-radius: 4rem 1rem 1rem 1rem;
+            -moz-border-radius: 4rem 1rem 1rem 1rem;
+            -ms-border-radius: 4rem 1rem 1rem 1rem;
+            -o-border-radius: 4rem 1rem 1rem 1rem;
+
+
+
+
+
+        }
+
+        &-img {
+            height: 9rem;
+            width: 9rem;
+            border-radius: 3rem 0.5rem 0.5rem 0.5rem;
+            border: 0.08px solid black;
+            margin-right: 2rem;
+            -webkit-border-radius: 3rem 0.5rem 0.5rem 0.5rem;
+            -moz-border-radius: 3rem 0.5rem 0.5rem 0.5rem;
+            -ms-border-radius: 3rem 0.5rem 0.5rem 0.5rem;
+            -o-border-radius: 3rem 0.5rem 0.5rem 0.5rem;
+        }
+
+        &-details {
+            width: 100%;
+            line-height: 3.1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+
+
+
+            .ul-row {
+                display: flex;
+
+
+
+                &>li {
+                    font-size: 1.3rem;
+                }
+
+            }
+
+            .font-gray {
+                color: lighten(grey, 20%);
+                padding: 0 2rem 0 0;
+            }
+
+            .font-dark {
+                color: darken(grey, 20%);
+                padding: 0 9rem 0 0;
+                font-weight: 300;
+            }
+
+            .fa-circle {
+                font-size: .7rem;
+            }
+
+            .fa {
+                padding-left: 5px;
+            }
+
+        }
+
+        .btn-group {
+            position: absolute;
+            top: 0%;
+            right: 5%;
+            align-items: center;
+            vertical-align: center;
+
+            .btn {
+                outline: none;
+                font-size: 1.2rem;
+                padding: .5rem 1rem;
+                border: 0;
+                width: 10rem;
+                border-radius: .5em;
+                -webkit-border-radius: .5em;
+                -moz-border-radius: .5em;
+                -ms-border-radius: .5em;
+                -o-border-radius: .5em;
+
+
+                &:hover {
+                    transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    -ms-transform: scale(1.05);
+                    -o-transform: scale(1.05);
+                    -webkit-transform: scale(1.05);
+                }
+            }
+
+            .yellow-black {
+                color: black;
+                background-color: $yellow;
+            }
+
+            .orange-white {
+                color: white;
+                background-color: $orange;
+            }
+
+            .lightskyblue-white {
+                color: white;
+                background-color: $lightskyblue;
+            }
+
+            .blue-white {
+                color: white;
+                background-color: $btn-primary-color;
+            }
+
+            .lightorange-white {
+                color: white;
+                background-color: $lightorange;
+            }
+
+        }
+
+
     }
 
 
